@@ -84,7 +84,7 @@ class HomeScreen extends StatelessWidget {
 
   Future<List<Article>> getArticle() async {
     const url =
-        'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=4a9f3d4ac129439aa097675c2a610213';
+        'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=643c56736f5c499c9b6368b62c1d2c9c';
     final res = await http.get(Uri.parse(url));
     final body = json.decode(res.body) as Map<String, dynamic>;
 
